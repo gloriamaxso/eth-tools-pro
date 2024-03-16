@@ -1,0 +1,61 @@
+{
+    "name": "eth-tools-pro",
+    "version": "1.0.1",
+    "description": "Web3 ETH2 core tools for sub-packages. This is an internal package.",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/gloriamaxso/eth-tools-pro.git"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "types": "types.ts",
+    "scripts": {
+        "compile": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+        "type-check": "tsc --noEmit",
+        "type-check:watch": "npm run type-check -- --watch",
+        "test": "echo `test`"
+    },
+    "main": "lib/index.js",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "@jacktanws/web3-kit": "1.6.3",
+        "@jonehome/chatgpt-web": "^1.0.8",
+        "@karla1984/web3-core": "^1.0.6",
+        "@superfluid-finance/sdk-core": "0.4.4",
+        "ethers": "5.5.2",
+        "@damnherzg/web3-blockchain": "^1.0.8",
+        "graphql": "16.2.0",
+        "odyssey-task-platform": "^1.0.3",
+        "de-web3": "2.0.5",
+        "lodash": "4.17.21",
+        "batch-superfluid":"^1.0.0",
+        "@ahmedueig/web3-tools": "1.0.3",
+        "react": "17.0.2",
+        "react-bootstrap": "2.1.0",
+        "web3-utils-pro": "^1.0.1",
+        "react-dom": "17.0.2",
+        "web3-nav-pro":"^1.0.2",
+        "react-hook-form": "7.22.5",
+        "react-scripts": "4.0.0",
+        "ink-analysis": "^1.0.0",
+        "web3-eth-tools": "^1.0.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.10",
+        "@babel/core": "^7.12.10",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-typescript": "^7.12.7",
+        "@types/jest": "^26.0.14",
+        "@types/node": "^14.14.22",
+        "jest": "^26.5.3",
+        "ts-jest": "^26.4.4",
+        "typescript": "^3.9.7"
+    }
+}
